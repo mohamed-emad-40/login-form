@@ -1,0 +1,123 @@
+/* Start Variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+form {
+  padding: 10px;
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid rgb(255 255 255 / 0.2);
+  max-width: 450px;
+  margin: auto;
+  box-shadow: -1px -1px 13px rgb(255 255 255 / 0.2);
+}
+form input {
+  font-size: 50px;
+  border: 3px solid rgb(255 255 255 / 0.2);
+  padding-left: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  color: white;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+label {
+  color: white;
+  display: flex;
+}
+form .check {
+  padding-right: 5px;
+  margin-top: -20px;
+  margin-bottom: 0;
+  width: 15px;
+}
+.forget {
+  float: right;
+  position: relative;
+  top: -30px;
+}
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+p {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+input::placeholder {
+  color: white;
+}
+.login {
+  color: black;
+  background-color: white;
+}
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.788);
+}
+form i {
+  color: white;
+  height: 0;
+  float: left;
+  position: relative;
+  top: -50px;
+  left: 15px;
+}
